@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsMongoDB.Views.MainPage">
+  <StackLayout Orientation="Vertical">
+    <Entry x:Name="nameEntry" Placeholder="Enter the Name" />
+    <Entry x:Name="lastNameEntry" Placeholder="Enter the Last Name" />
+    <StackLayout Orientation="Horizontal">
+      <Button x:Name="addButton" Text="Add Contact" BackgroundColor="Green" />
+    </StackLayout>
+  </StackLayout>
+</ContentPage>
