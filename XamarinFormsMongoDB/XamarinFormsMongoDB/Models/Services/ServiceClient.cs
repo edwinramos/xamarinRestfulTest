@@ -28,7 +28,7 @@ namespace XamarinFormsMongoDB.Models.Services
             var json = JsonConvert.SerializeObject(contact);
             var content = new StringContent(json, Encoding.UTF8, "application/json");
 
-            HttpResponseMessage response = await client.PutAsync(client.BaseAddress + "api/contacts/" + contact.Id, content);
+            HttpResponseMessage response = await client.PutAsync(client.BaseAddress + "api/contact/" + contact.Id, content);
             response.EnsureSuccessStatusCode();
 
             // Deserialize the updated Contact from the response body.
@@ -38,7 +38,7 @@ namespace XamarinFormsMongoDB.Models.Services
 
         public async Task<HttpStatusCode> DeleteContactAsync(string id)
         {
-            HttpResponseMessage response = await client.DeleteAsync($"api/contact/{id}");
+            HttpResponseMessage response = await client.DeleteAsync(client.BaseAddress + "api/contact/" + id);
             return response.StatusCode;
         }
 

@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsMongoDB.Views.ContactDetailPage">
   <StackLayout Orientation="Vertical">
-    <Entry x:Name="nameEntry" Text="{Binding Name}"/>
-    <Entry x:Name="lastNameEntry" Text="{Binding LastName}"/>
+    <Entry x:Name="nameEntry" Placeholder="Name"/>
+    <Entry x:Name="lastNameEntry" Placeholder="LastName"/>
     <StackLayout Orientation="Horizontal">
-      <Button x:Name="saveButton" Command="{Binding SaveCommand}"/>
-      <Button x:Name="deleteButton" Command="{Binding DeleteCommand}"/>
+      <Button x:Name="saveButton" Command="{Binding SaveCommand}" Text="Save Changes" BackgroundColor="Green" />
+      <Button x:Name="deleteButton" Command="{Binding DeleteCommand}" Text="Delete Contact" BackgroundColor="Red" />
     </StackLayout>
   </StackLayout>
 </ContentPage>

@@ -10,7 +10,7 @@ namespace XamarinFormsMongoDB.ViewModels
 {
     public class ContactVM : ObservableBaseObject
     {
-        public ObservableCollection<Contact> ContactList = new ObservableCollection<Contact>();
+        public ObservableCollection<Contact> ContactList { get; set; }
         public Command CreateCommand { get; set; }
         public Command Read1Command { get; set; }
         public Command ReadAllCommand { get; set; }
@@ -21,22 +21,27 @@ namespace XamarinFormsMongoDB.ViewModels
         public string Name { get; set; }
         public string LastName { get; set; }
 
+        public string FullName { get; set; }
+
         bool isBusy = false;
         public bool IsBusy
         {
             get { return isBusy; }
-            set { isBusy = value; }
+            set { isBusy = value; OnPropertyChanged("IsBusy"); }
         }
 
-        private ServiceClient client = new ServiceClient();
+        private ServiceClient client;
 
         public ContactVM()
         {
             CreateCommand = new Command(() => Insert());
-            Read1Command = new Command(() => ReadOne(Id));
-            ReadAllCommand = new Command(() => ReadAll());
+            Read1Command = new Command(() => LoadOne(Id));
+            ReadAllCommand = new Command(() => LoadAll());
             UpdateCommand = new Command(() => Update());
             DeleteCommand = new Command(() => Delete());
+
+            ContactList = new ObservableCollection<Contact>();
+            client = new ServiceClient();
         }
 
         private void Delete()
@@ -49,7 +54,7 @@ namespace XamarinFormsMongoDB.ViewModels
             throw new NotImplementedException();
         }
 
-        async void ReadAll()
+        async void LoadAll()
         {
             var result = await client.GetContactsAsync();
             ContactList.Clear();
@@ -60,7 +65,7 @@ namespace XamarinFormsMongoDB.ViewModels
             IsBusy = false;
         }
 
-        async void ReadOne(string id)
+        async void LoadOne(string id)
         {
             await client.GetContactAsync("api/contact/"+id);
         }
@@ -73,6 +78,7 @@ namespace XamarinFormsMongoDB.ViewModels
                 LastName = this.LastName
             };
             await client.CreateContactAsync(contact);
+            LoadAll();
         }
     }
 }

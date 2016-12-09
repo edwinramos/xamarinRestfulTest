@@ -10,5 +10,10 @@ namespace XamarinFormsMongoDB.Models.Entities
         public string Name { get; set; }
         [JsonProperty("lastName")]
         public string LastName { get; set; }
+
+        public string FullName
+        {
+            get { return string.Format("{0} {1}", this.Name, this.LastName); }
+        }
     }
 }

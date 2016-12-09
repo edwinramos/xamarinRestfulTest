@@ -14,8 +14,8 @@
                 RefreshCommand="{Binding ReadAllCommand}">
       <ListView.ItemTemplate>
         <DataTemplate>
-          <TextCell Text="{Binding Name}"
-                    Detail="{Binding LastName}"
+          <TextCell Text="{Binding FullName}"
+                    Detail="{Binding Id}"
                     TextColor="Blue"/>
         </DataTemplate>
       </ListView.ItemTemplate>
