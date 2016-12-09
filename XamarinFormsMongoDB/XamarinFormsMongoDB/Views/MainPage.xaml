@@ -3,10 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinFormsMongoDB.Views.MainPage">
   <StackLayout Orientation="Vertical">
-    <Entry x:Name="nameEntry" Placeholder="Enter the Name" />
-    <Entry x:Name="lastNameEntry" Placeholder="Enter the Last Name" />
+    <Entry x:Name="nameEntry" Text="{Binding Name}" Placeholder="Enter the Name" />
+    <Entry x:Name="lastNameEntry" Text="{Binding LastName}" Placeholder="Enter the Last Name" />
     <StackLayout Orientation="Horizontal">
-      <Button x:Name="addButton" Text="Add Contact" BackgroundColor="Green" />
+      <Button x:Name="addButton" Command="{Binding CreateCommand}" Text="Add Contact" BackgroundColor="Green" />
     </StackLayout>
+    <ListView x:Name="list" ItemsSource="{Binding ContactList}"
+              IsRefreshing="{Binding IsBusy}"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="{Binding ReadAllCommand}">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding Name}"
+                    Detail="{Binding LastName}"
+                    TextColor="Blue"/>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
   </StackLayout>
 </ContentPage>

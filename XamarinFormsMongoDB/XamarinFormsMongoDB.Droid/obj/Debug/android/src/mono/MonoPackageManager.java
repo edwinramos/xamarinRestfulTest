@@ -134,17 +134,17 @@ class MonoPackageManager_Resources {
 		"System.Runtime.InteropServices.dll",
 		"System.Resources.ResourceManager.dll",
 		"System.Diagnostics.Tools.dll",
+		"System.Net.Primitives.dll",
+		"Newtonsoft.Json.dll",
+		"System.Xml.XDocument.dll",
+		"System.Runtime.Serialization.Primitives.dll",
+		"System.Text.Encoding.dll",
+		"System.Text.Encoding.Extensions.dll",
 		"System.Net.Http.Formatting.dll",
 		"System.ComponentModel.EventBasedAsync.dll",
 		"System.Runtime.Serialization.Xml.dll",
-		"System.Runtime.Serialization.Primitives.dll",
-		"System.Text.Encoding.dll",
 		"System.Net.Http.Primitives.dll",
-		"Newtonsoft.Json.dll",
-		"System.Xml.XDocument.dll",
-		"System.Text.Encoding.Extensions.dll",
 		"System.Xml.XmlSerializer.dll",
-		"System.Net.Primitives.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

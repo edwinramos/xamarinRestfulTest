@@ -7,6 +7,7 @@ using XamarinFormsMongoDB.Models.Entities;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Net.Http.Headers;
+using System.Text;
 
 namespace XamarinFormsMongoDB.Models.Services
 {
@@ -16,14 +17,18 @@ namespace XamarinFormsMongoDB.Models.Services
 
         public ServiceClient()
         {
-            client.BaseAddress = new Uri("https://angular2-theerm.c9users.io/");
+            client.BaseAddress = new Uri("https://xamarintictactoe.herokuapp.com/");
             client.DefaultRequestHeaders.Accept.Clear();
+            client.MaxResponseContentBufferSize = 256000;
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
         public async Task<Contact> UpdateContactAsync(Contact contact)
         {
-            HttpResponseMessage response = await client.PutAsJsonAsync($"api/contact/{contact.Id}", contact);
+            var json = JsonConvert.SerializeObject(contact);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await client.PutAsync(client.BaseAddress + "api/contacts/" + contact.Id, content);
             response.EnsureSuccessStatusCode();
 
             // Deserialize the updated Contact from the response body.
@@ -37,41 +42,38 @@ namespace XamarinFormsMongoDB.Models.Services
             return response.StatusCode;
         }
 
-        public async Task<Uri> CreateContactAsync(Contact Contact)
+        public async Task<Uri> CreateContactAsync(Contact contact)
         {
-            try
-            {
-                HttpResponseMessage response = await client.PostAsJsonAsync("api/contacts", Contact);
-                response.EnsureSuccessStatusCode();
 
-                // Return the URI of the created resource.
-                return response.Headers.Location;
-            }
-            catch (System.TypeLoadException ex)
-            {
-                string ss = ex.Message;
-            }
-            return null;
+            var json = JsonConvert.SerializeObject(contact);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            HttpResponseMessage response = await client.PostAsync(client.BaseAddress + "api/contacts", content);
+
+            //HttpResponseMessage response = await client.PostAsJsonAsync("api/contacts", contact);
+            response.EnsureSuccessStatusCode();
+
+            // Return the URI of the created resource.
+            return response.Headers.Location;
         }
 
-        public async Task<Contact> GetContactAsync(string path)
+        public async Task<Contact> GetContactAsync(string id)
         {
             Contact Contact = null;
-            HttpResponseMessage response = await client.GetAsync(path);
+            HttpResponseMessage response = await client.GetAsync(string.Format("{0}api/contact/{1}", client.BaseAddress, id));
             if (response.IsSuccessStatusCode)
             {
                 Contact = await response.Content.ReadAsAsync<Contact>();
             }
             return Contact;
         }
-        //public async Task RunAsync()
-        //{
-        //    // New code:
-        //    client.BaseAddress = new Uri("https://xamarintictactoe.herokuapp.com/");
-        //    client.DefaultRequestHeaders.Accept.Clear();
-        //    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-        //}
+        public async Task<IEnumerable<Contact>> GetContactsAsync()
+        {
+            string response = await client.GetStringAsync(client.BaseAddress + "api/contacts");
+            IEnumerable<Contact> contactList = JsonConvert.DeserializeObject<IEnumerable<Contact>>(response);
+            return contactList;
+        }
 
         //public string Serialize(IEnumerable<Contact> contacts)
         //{

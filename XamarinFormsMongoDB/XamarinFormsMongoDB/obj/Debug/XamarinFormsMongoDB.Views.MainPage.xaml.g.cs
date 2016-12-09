@@ -26,11 +26,15 @@ namespace XamarinFormsMongoDB.Views {
         private global::Xamarin.Forms.Button addButton;
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
+        private global::Xamarin.Forms.ListView list;
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]
         private void InitializeComponent() {
             this.LoadFromXaml(typeof(MainPage));
             nameEntry = this.FindByName<global::Xamarin.Forms.Entry>("nameEntry");
             lastNameEntry = this.FindByName<global::Xamarin.Forms.Entry>("lastNameEntry");
             addButton = this.FindByName<global::Xamarin.Forms.Button>("addButton");
+            list = this.FindByName<global::Xamarin.Forms.ListView>("list");
         }
     }
 }

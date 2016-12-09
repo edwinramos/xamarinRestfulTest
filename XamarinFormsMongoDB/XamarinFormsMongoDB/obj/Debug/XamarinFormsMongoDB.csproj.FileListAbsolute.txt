@@ -26,3 +26,35 @@ C:\Users\Edwin Ramos\Documents\Visual Studio 2015\Projects\XamarinFormsMongoDB\X
 C:\Users\Edwin Ramos\Documents\Visual Studio 2015\Projects\XamarinFormsMongoDB\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.pdb
 C:\Users\Edwin Ramos\Documents\Visual Studio 2015\Projects\XamarinFormsMongoDB\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
 C:\Users\Edwin Ramos\Documents\Visual Studio 2015\Projects\XamarinFormsMongoDB\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.csproj.App.config
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.csprojResolveAssemblyReference.cache
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.App.xaml.g.cs
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.Views.MainPage.xaml.g.cs
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.config
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.pdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Platform.pdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.Views.ContactDetailPage.xaml.g.cs
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.pdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
+C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb

@@ -7,27 +7,22 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamarinFormsMongoDB.Models.Entities;
 using XamarinFormsMongoDB.Models.Services;
+using XamarinFormsMongoDB.ViewModels;
 
 namespace XamarinFormsMongoDB.Views
 {
     public partial class MainPage : ContentPage
     {
-        ServiceClient client;
-
         public MainPage()
         {
             InitializeComponent();
-            addButton.Clicked += AddButton_Clicked;
+            BindingContext = new ContactVM();
+            //list.ItemSelected += List_ItemSelected;
         }
 
-        private async void AddButton_Clicked(object sender, EventArgs e)
-        {
-            client = new ServiceClient();
-            Contact contact = new Contact();
-            contact.Name = nameEntry.Text;
-            contact.LastName = lastNameEntry.Text;
-
-            await client.CreateContactAsync(contact);
-        }
+        //private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        //{
+        //    await Navigation.PushAsync(new ContactDetailPage((Contact)e.SelectedItem));
+        //}
     }
 }
