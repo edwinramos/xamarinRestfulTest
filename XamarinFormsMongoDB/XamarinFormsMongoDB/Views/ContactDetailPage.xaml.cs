@@ -35,7 +35,7 @@ namespace XamarinFormsMongoDB.Views
         private async void DeleteButton_Clicked(object sender, EventArgs e)
         {
             var res = await client.DeleteContactAsync(this.Contact.Id);
-            await DisplayAlert("Delete Contact","StatusCode: " + res.ToString(), "Ok");
+            await DisplayAlert("Delete Contact", "Contact deleted", "Ok");
             await Navigation.PopAsync();
         }
 
@@ -48,7 +48,7 @@ namespace XamarinFormsMongoDB.Views
                 LastName = lastNameEntry.Text
             };
             var res = await client.UpdateContactAsync(contact);
-            await DisplayAlert("Save Changes", "StatusCode: " + res.ToString(), "Ok");
+            await DisplayAlert("Save Changes", "Contact updated", "Ok");
             await Navigation.PopAsync();
         }
     }

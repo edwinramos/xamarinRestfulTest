@@ -23,6 +23,7 @@ namespace XamarinFormsMongoDB.Views
 
             BindingContext = new ContactVM();
             list.ItemSelected += List_ItemSelected;
+            list.BeginRefresh();
         }
 
         private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
