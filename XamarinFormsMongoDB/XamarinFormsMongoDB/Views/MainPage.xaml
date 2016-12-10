@@ -8,17 +8,31 @@
     <StackLayout Orientation="Horizontal">
       <Button x:Name="addButton" Command="{Binding CreateCommand}" Text="Add Contact" BackgroundColor="Green" />
     </StackLayout>
-    <ListView x:Name="list" ItemsSource="{Binding ContactList}"
-              IsRefreshing="{Binding IsBusy}"
-                IsPullToRefreshEnabled="True"
-                RefreshCommand="{Binding ReadAllCommand}">
-      <ListView.ItemTemplate>
-        <DataTemplate>
-          <TextCell Text="{Binding FullName}"
-                    Detail="{Binding Id}"
-                    TextColor="Blue"/>
-        </DataTemplate>
-      </ListView.ItemTemplate>
-    </ListView>
+    <RelativeLayout
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand">
+      <ActivityIndicator IsRunning="{Binding IsBusy}"
+                                     Color="Black"
+                                     VerticalOptions="CenterAndExpand"
+                                     HorizontalOptions="CenterAndExpand"
+                                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                                        Property=Height,
+                                        Factor=0.33}"
+                                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                                        Property=Height,
+                                        Factor=0.33}" />
+      <ListView x:Name="contactListView" ItemsSource="{Binding ContactList}"
+                IsRefreshing="{Binding IsBusy}"
+                  IsPullToRefreshEnabled="True"
+                  RefreshCommand="{Binding ReadAllCommand}">
+        <ListView.ItemTemplate>
+          <DataTemplate>
+            <TextCell Text="{Binding FullName}"
+                      Detail="{Binding Id}"
+                      TextColor="Blue"/>
+          </DataTemplate>
+        </ListView.ItemTemplate>
+      </ListView>
+    </RelativeLayout>
   </StackLayout>
 </ContentPage>

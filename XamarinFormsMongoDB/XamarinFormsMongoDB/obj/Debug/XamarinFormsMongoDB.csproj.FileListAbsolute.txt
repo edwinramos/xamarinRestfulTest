@@ -56,9 +56,3 @@ C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinF
 C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.pdb
 C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
 C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb
-C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
-C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb
-C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
-C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb
-C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\obj\Debug\XamarinFormsMongoDB.dll.mdb
-C:\Users\Edwin\Documents\Xamarin\xamarinRestfulTest\XamarinFormsMongoDB\XamarinFormsMongoDB\bin\Debug\XamarinFormsMongoDB.dll.mdb
