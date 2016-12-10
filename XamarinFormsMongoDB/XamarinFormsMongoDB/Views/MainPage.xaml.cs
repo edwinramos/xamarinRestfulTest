@@ -22,6 +22,7 @@ namespace XamarinFormsMongoDB.Views
                 new Thickness(10));
 
             BindingContext = new ContactVM();
+<<<<<<< HEAD
             contactListView.ItemSelected += List_ItemSelected;
             contactListView.BeginRefresh();
         }
@@ -32,6 +33,10 @@ namespace XamarinFormsMongoDB.Views
             lastNameEntry.Text = "";
             contactListView.BeginRefresh();
             base.OnAppearing();
+=======
+            list.ItemSelected += List_ItemSelected;
+            list.BeginRefresh();
+>>>>>>> ade5b35fc8ccbfb9d23a591fadc1dd464ecfe2db
         }
 
         private async void List_ItemSelected(object sender, SelectedItemChangedEventArgs e)
